@@ -1,8 +1,11 @@
 # How-to-install-Termux-Native-Desktop-mode-on-Android
-the best way to use termux
+The Best Way to use Termux
 
 
-Step 1.
+Step 1. Setting up Android
 Enable "disable child process restrictions"
 
-this setting is in "android settings/developer"
+This Setting is in "Android settings/Developer"
+
+
+Step 2.

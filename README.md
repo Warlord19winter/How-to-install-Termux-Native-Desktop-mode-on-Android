@@ -21,3 +21,17 @@ Select Termux to Install the app, Do The Same for Termux-X11
 
 Step 3. Setting Up Termux
 
+to start with the commands
+
+1: termux-setup-storage
+2: termux-change-repo
+3: pkg update
+4: pkg upgrade
+5: pkg install x11-repo tur-repo root-repo
+6: pkg install curl wget git
+7: pkg install xfce4 xfce4-goodies termux-x11-nightly
+8:pkg install florence code-oss firefox ark
+
+then finaly the launch command
+
+termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"

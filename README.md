@@ -47,3 +47,5 @@ to start with the commands
 then finaly the launch command
 
 termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"
+
+![Screenshot_20260216_151859_TermuxX11](https://github.com/user-attachments/assets/eed7d89d-1b03-4cf6-a11f-9950c1d0c33f)

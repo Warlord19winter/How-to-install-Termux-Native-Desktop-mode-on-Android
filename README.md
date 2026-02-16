@@ -44,6 +44,8 @@ to start with the commands
 
 8: pkg install florence code-oss firefox ark
 
+9: pkg install neofetch
+
 Then Finaly the Launch Command
 
 termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"

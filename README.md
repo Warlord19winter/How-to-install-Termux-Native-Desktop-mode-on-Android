@@ -7,15 +7,15 @@ Straight Native Termux
 
 Step 1. Setting up Android
 
- Developer Settings is Located in "Android settings/Developer" 
- 
- This Setting Allows Termux to Run in the Background
+Developer Settings will be Located in "Android settings/Developer" 
 
 To get Developer Settings to Show go to The Android Build Number Located in "Android Settings/About Phone/Software Information
 
 If You dont See This Setting Then Your Phone Does Not Support It
 
 Enable "disable child process restrictions"
+
+This Setting Allows Termux to Run in the Background
 
 Step 2. Download and Install Termux & Termux-X11
 

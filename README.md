@@ -1,6 +1,9 @@
 # How-to-install-Termux-Native-Desktop-mode-on-Android
 The Best Way to use Termux
 
+No Proot/ No Chroot/ No Ai/ No Scripts
+
+Straight Native Termux
 
 Step 1. Setting up Android
 

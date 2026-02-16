@@ -39,7 +39,7 @@ to start with the commands
 
 7: pkg install xfce4 xfce4-goodies termux-x11-nightly
 
-8:pkg install florence code-oss firefox ark
+8: pkg install florence code-oss firefox ark
 
 then finaly the launch command
 

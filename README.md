@@ -119,7 +119,7 @@ These are Needed Programs to install
 
 9: pkg install neofetch xorgproto nano
 
-10: pkg install termux-exec clang
+10: pkg install termux-exec clang inxi
 
 ----------------------------------------------------------------------------------------------------------------------
 

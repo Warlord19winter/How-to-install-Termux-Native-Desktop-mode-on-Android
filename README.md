@@ -135,3 +135,7 @@ termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"
 And Thus a Native Termux Desktop Environment
 
 ![Screenshot_20260216_152457_TermuxX11](https://github.com/user-attachments/assets/f34eae2a-1ea6-4866-b082-87ddedc9832b)
+
+if you want the wallpaper here it is
+
+https://www.deviantart.com/jesuisnerd/art/Minimalist-Arch-Linux-Wallpaper-1920x1200-297370344

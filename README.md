@@ -2,9 +2,35 @@
 
 The Best Way to use Termux
 
+----------------------------------------------------------------------------------------------------------------------
+
+The Pros and Cons
+
+Native: Runs directly inside Termux. Faster, lighter, better performance.
+
+Proot: Runs a full Linux distro inside a container. More compatibility, but heavier.
+
+----------------------------------------------------------------------------------------------------------------------
+
 No Proot/ No Chroot/ No Ai/ No Scripts
 
 Straight Native Termux Desktop Mode
+
+Requirements:
+
+Android 8 or higher
+
+Termux installed from GitHub 
+
+(NOT F-droid Version)
+
+(NOT Google Play Version)
+
+Termux-X11 installed from Github
+
+At least 4 GB free storage
+
+6-8 GB RAM recommended for smooth desktop use
 
 ----------------------------------------------------------------------------------------------------------------------
 

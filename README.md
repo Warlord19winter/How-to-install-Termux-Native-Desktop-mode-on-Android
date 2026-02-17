@@ -36,11 +36,24 @@ At least 4 GB free storage
 
 Step 1. Setting up Android
 
-Developer Settings will be Located in "Android settings/Developer" 
-
 To get Developer Settings to Show go to The Android Build Number Located in "Android Settings/About Phone/Software Information
 
-If You dont See This Setting Then Your Phone Does Not Support It
+![ResizedImage_2026-02-17_15-15-18_1388](https://github.com/user-attachments/assets/8da94ade-b4d4-4692-8ac4-24abb9dc46ca)
+
+![ResizedImage_2026-02-17_15-14-42_1366](https://github.com/user-attachments/assets/00f170f0-6570-4d39-a820-d581fb95dd0c)
+
+![ResizedImage_2026-02-17_15-13-59_1111](https://github.com/user-attachments/assets/616a22e0-de5d-4ba1-8c9a-04e777fbca6f)
+
+Click the Build Number 3 or More Times to Enable Developer settings
+
+Developer Settings will be Located in "Android settings/Developer"
+
+![ResizedImage_2026-02-17_15-29-57_2421](https://github.com/user-attachments/assets/fce5ae3b-387b-4ec0-84f5-b3d8ce5758ec)
+
+The go to the Bottom of Developer Settings
+
+![ResizedImage_2026-02-17_15-20-49_5293](https://github.com/user-attachments/assets/4febf4c7-81ba-4605-8602-02ea2bfbfe5f)
+
 
 Enable "disable child process restrictions"
 

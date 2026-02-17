@@ -96,8 +96,6 @@ Then Finaly the Launch Command
 
 termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"
 
-----------------------------------------------------------------------------------------------------------------------
-
 And Thus a Native Termux Desktop Environment
 
 ![Screenshot_20260216_152457_TermuxX11](https://github.com/user-attachments/assets/f34eae2a-1ea6-4866-b082-87ddedc9832b)
@@ -105,3 +103,23 @@ And Thus a Native Termux Desktop Environment
 if you want the wallpaper here it is
 
 https://www.deviantart.com/jesuisnerd/art/Minimalist-Arch-Linux-Wallpaper-1920x1200-297370344
+
+----------------------------------------------------------------------------------------------------------------------
+
+Bonus program
+
+I Know the Title Does Say no Scripts But This Program is an Exception to Termux
+
+WOW64 is xow64 but wine to run .exe programs in termux
+
+This Commnads is to Install WOW64
+
+1: cd $HOME && rm -rf ~/xow64 && wget https://github.com/ar37-rs/xow64-wine/raw/refs/heads/main/xow64 && chmod +x ~/xow64
+
+2: ~/xow64 install
+
+3: ~/xow64 r winecfg
+
+use ( r ) to run programs
+
+Now Wine is Installed

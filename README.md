@@ -110,7 +110,7 @@ These are Needed Programs to install
 
 ----------------------------------------------------------------------------------------------------------------------
 
-These Commands is to Fix Audio issues
+These Commands is to Install Audio
 
 11: pkg install pulseaudio
 

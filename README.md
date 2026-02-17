@@ -89,6 +89,7 @@ These Commands is to Fix Audio issues
 11: pkg install pulseaudio
 
 12: pulseaudio --start
+
 ----------------------------------------------------------------------------------------------------------------------
 
 Then Finaly the Launch Command

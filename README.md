@@ -89,41 +89,6 @@ These Commands is to Fix Audio issues
 11: pkg install pulseaudio
 
 12: pulseaudio --start
-
-13: nano ~/.profile
-
-----------------------------------------------------------------------------------------------------------------------
-
-Paste This in ~/.profile
-
-echo 'export PULSE_SERVER=unix:/data/dat/com.termux/file/user/tmp/pulse-socket' >> ~/.bashrc
-
-export LIBGL_ALWAYS_SOFTWARE=0
-
-export LD_LIBRARY_PATH=$PREFIX/lib:$LD_LIBRARY_PATH
-
-Press CTRL S to Save
-
-Press CTRL X to Exit nano
-
-----------------------------------------------------------------------------------------------------------------------
-
-14: source ~/.profile
-
-15: mkdir -p ~/.config/pulse
-
-16: nano ~/.config/pulse/client.conf
-
-----------------------------------------------------------------------------------------------------------------------
-
-Paste this in ~/.config/pulse/client.conf
-
-export PULSE_SERVER = unix:/data/data/com.termux/files/usr/tmp/pulse-socket
-
-Press CTRL S to Save
-
-Press CTRL X to Exit nano
-
 ----------------------------------------------------------------------------------------------------------------------
 
 Then Finaly the Launch Command

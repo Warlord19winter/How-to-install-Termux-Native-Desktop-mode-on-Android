@@ -9,6 +9,29 @@ No Proot/ No Chroot/ No Ai/ No Scripts
 
 Straight Native Termux Desktop Mode
 
+Phone and Handhelds I used with this guide
+----------------------------------------------------------------------------------------------------------------------
+
+Phones
+
+1: Samsung Galaxy S23 base phone
+
+2: Samsung Galaxy S24 ultra
+
+3: Red Magic 9
+
+4: Unihertz Jelly star
+
+5: Motarola E6
+
+Android Handhelds
+
+1: Retroid Flip
+
+2: Retroid Pocket 5
+
+3: Retroid Pocket 6
+
 Requirements:
 ----------------------------------------------------------------------------------------------------------------------
 

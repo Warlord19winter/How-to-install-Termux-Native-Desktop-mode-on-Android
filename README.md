@@ -305,13 +305,13 @@ This Command Sets up the Repos
 Use the Arrow keys up/down to select
 then hit Spacebar
 
+or press enter twice
+
 Termux Will Ask You to Choose From Mirror Group, or Single Mirror
 
 Reccomended Choose Mirror Group so You Don't Have no Issues With The Repo's
 
 Single Mirror Gives you The Choice Of Differnt Repo's
-
-Click Enter Two Times
 
 4: pkg upgrade
 

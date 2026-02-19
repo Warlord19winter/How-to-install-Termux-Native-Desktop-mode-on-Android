@@ -8,14 +8,6 @@ Straight Native Termux Desktop Mode
 
 ----------------------------------------------------------------------------------------------------------------------
 
-The Pros and Cons
-
-Native: Runs directly inside Termux. Faster, lighter, better performance.
-
-Proot: Runs a full Linux distro inside a container. More compatibility, but heavier.
-
-----------------------------------------------------------------------------------------------------------------------
-
 Requirements:
 
 Android 8 or higher

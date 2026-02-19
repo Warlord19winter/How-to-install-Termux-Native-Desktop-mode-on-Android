@@ -30,9 +30,9 @@ Step 1. Setting up Android
 
 To get Developer Settings to Show go to The Android Build Number Located in "Android Settings/About Phone/Software Information
 
-![ResizedImage_2026-02-17_15-15-18_1388](https://github.com/user-attachments/assets/8da94ade-b4d4-4692-8ac4-24abb9dc46ca)
+![ResizedImage_2026-02-17_15-15-18_1388](https://github.com/user-attachments/assets/c37b3062-d0ca-49e8-95a5-47db1733c12a)
 
-![ResizedImage_2026-02-17_15-14-42_1366](https://github.com/user-attachments/assets/00f170f0-6570-4d39-a820-d581fb95dd0c)
+![1001050516](https://github.com/user-attachments/assets/db32f979-a717-4adb-8208-435dfbb1c398)
 
 ![ResizedImage_2026-02-17_15-13-59_1111](https://github.com/user-attachments/assets/616a22e0-de5d-4ba1-8c9a-04e777fbca6f)
 

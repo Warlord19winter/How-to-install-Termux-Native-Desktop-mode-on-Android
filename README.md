@@ -69,7 +69,7 @@ What is The Commands Mean
 
 ----------------------------------------------------------------------------------------------------------------------
 
-Termux-setup-storage
+termux-setup-storage
 ----------------------------------------------------------------------------------------------------------------------
 
 termux-setup-storage is a command used to grant Termux access to your Android device's shared storage, enabling it to interact with files in directories like Downloads, Pictures, and Documents. 
@@ -84,7 +84,7 @@ This creates a ~/storage directory in your Termux home folder, containing symbol
 ~/storage/movies → Video files
 ~/storage/external → Termux-private folder on external storage (if available)
 
-Termux-Change-repo
+termux-Change-repo
 ----------------------------------------------------------------------------------------------------------------------
 
 termux-change-repo is the official utility in Termux used to switch between different mirrors for the package repository.  It helps resolve issues like "repository under maintenance," slow downloads, or broken mirrors by allowing you to select a faster or more reliable source. 
@@ -100,7 +100,7 @@ pkg update && pkg upgrade
 
 to refresh and update packages. 
 
-Pkg Update && Pkg Upgrade
+pkg Update && Pkg Upgrade
 ----------------------------------------------------------------------------------------------------------------------
 
 pkg update && pkg upgrade is the standard command sequence to keep Termux up to date. 
@@ -109,7 +109,7 @@ Run pkg update to refresh the package list from the repositories.
 Follow with pkg upgrade to install the latest versions of all installed packages.
 Use pkg update && pkg upgrade -y to automatically confirm prompts with -y, saving time. 
 
-Pkg install x11-repo root-repo tur-repo
+pkg install x11-repo root-repo tur-repo
 ----------------------------------------------------------------------------------------------------------------------
 
 x11-repo: Installs the X11 package repository, enabling access to X11-related packages (like termux-x11-nightly, xwayland, and desktop environments such as XFCE4) for running graphical Linux applications on Android.  This is required to use Termux X11.
@@ -118,7 +118,7 @@ root-repo: Enables access to packages that require root privileges on Android.  
 
 tur-repo: This is not a standard or official Termux repository.  It appears to be a typo or confusion with unstable-repo (for experimental packages) or its-pointless.github.io (a popular community repository). The tur-repo package does not exist in official Termux repositories and may cause errors. Use unstable-repo if you need unstable packages
 
-Pkg Install Git Wget Curl
+pkg Install Git Wget Curl
 ----------------------------------------------------------------------------------------------------------------------
 
 To install git, wget, and curl on Termux, run the following command in your Termux terminal:

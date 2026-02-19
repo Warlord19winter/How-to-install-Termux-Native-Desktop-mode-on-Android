@@ -145,7 +145,20 @@ https://www.deviantart.com/jesuisnerd/art/Minimalist-Arch-Linux-Wallpaper-1920x1
 
 ----------------------------------------------------------------------------------------------------------------------
 
-Bonus program
+Bonus programs
+
+This Command Installs Dosbox
+
+pkg install dosbox
+
+In the Config for Dosbox Paste This into the Text File
+
+mount c /data/data/com.termux/files/home/Downloads
+C:
+
+Now Dosbox is Install
+
+----------------------------------------------------------------------------------------------------------------------
 
 I Know the Title Does Say no Scripts But This Program is an Exception to Termux
 

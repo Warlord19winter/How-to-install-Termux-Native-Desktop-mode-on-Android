@@ -302,6 +302,9 @@ This Command Sets up the Repos
 
 2: termux-change-repo
 
+Use the Arrow keys up/down to select
+then hit Spacebar
+
 Termux Will Ask You to Choose From Mirror Group, or Single Mirror
 
 Reccomended Choose Mirror Group so You Don't Have no Issues With The Repo's

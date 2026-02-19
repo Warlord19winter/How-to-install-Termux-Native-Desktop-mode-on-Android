@@ -151,7 +151,7 @@ This Command Installs Dosbox
 
 pkg install dosbox
 
-In the Config for Dosbox Paste This into the Text File
+In the Config for Dosbox Paste This into the Text File at the Bottom
 
 mount c /data/data/com.termux/files/home/Downloads
 C:

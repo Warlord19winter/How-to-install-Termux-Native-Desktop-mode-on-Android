@@ -302,9 +302,13 @@ This Command Sets up the Repos
 
 2: termux-change-repo
 
-Click Enter Two Times
+Termux Will Ask You to Choose From Mirror Group, or Single Mirror
 
-3: pkg update
+Reccomended Choose Mirror Group so You Don't Have no Issues With The Repo's
+
+Single Mirror Gives you The Choice Of Differnt Repo's
+
+Click Enter Two Times
 
 4: pkg upgrade
 

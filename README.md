@@ -1,5 +1,8 @@
 # How-to-install-Termux-Native-Desktop-mode-on-Android
 
+In This Guide on Termux It Will Cover Only Github Version of Termux
+----------------------------------------------------------------------------------------------------------------------
+
 The Best Way to use Termux
 
 No Proot/ No Chroot/ No Ai/ No Scripts
@@ -7,6 +10,98 @@ No Proot/ No Chroot/ No Ai/ No Scripts
 Straight Native Termux Desktop Mode
 
 ----------------------------------------------------------------------------------------------------------------------
+
+What Does Some of These Things Mean
+----------------------------------------------------------------------------------------------------------------------
+
+Phantom Process Killer Issue
+----------------------------------------------------------------------------------------------------------------------
+
+Phantom Process Killer in Android 12+ is a system feature that terminates background processes, particularly those spawning more than 32 child processes (a combined limit across all apps), often causing Termux to crash with the error [Process completed (signal 9) - press Enter]. 
+
+This issue affects Termux, Andronix, and similar apps that run Linux environments or background services. The killer is triggered by excessive CPU usage or process count, leading to unexpected app termination. 
+
+How to Fix It
+For Non-Rooted Devices (Using ADB)
+Enable Developer Options by tapping Build Number 7 times in Settings > About Phone. 
+Enable USB Debugging and Wireless Debugging. 
+Use a PC or Termux with android-tools to run:
+adb shell "settings put global settings_enable_monitor_phantom_procs false"
+
+For older Android versions (12), use:
+adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"
+adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"
+
+Reboot your device.
+For Rooted Devices
+Use Termux with root access (su) and run:
+
+su -c "settings put global settings_enable_monitor_phantom_procs false"
+
+Or for Android 12:
+
+su -c "/system/bin/device_config set_sync_disabled_for_tests persistent"
+su -c "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"
+
+Reboot after.
+
+For Android 14+
+Go to Settings > Developer Options > Disable child process restrictions (if available). 
+
+What is The Commands Mean
+
+----------------------------------------------------------------------------------------------------------------------
+
+Termux-setup-storage
+----------------------------------------------------------------------------------------------------------------------
+
+termux-setup-storage is a command used to grant Termux access to your Android device's shared storage, enabling it to interact with files in directories like Downloads, Pictures, and Documents. 
+
+Run the command in Termux: termux-setup-storage
+When prompted, tap "Allow" in the Android permissions dialog to grant access. 
+This creates a ~/storage directory in your Termux home folder, containing symbolic links to key storage locations:
+~/storage/shared → Root of shared storage (/sdcard)
+~/storage/downloads → Your Downloads folder
+~/storage/pictures → Pictures from all apps
+~/storage/music → Audio files
+~/storage/movies → Video files
+~/storage/external → Termux-private folder on external storage (if available)
+
+Termux-Change-repo
+----------------------------------------------------------------------------------------------------------------------
+
+termux-change-repo is the official utility in Termux used to switch between different mirrors for the package repository.  It helps resolve issues like "repository under maintenance," slow downloads, or broken mirrors by allowing you to select a faster or more reliable source. 
+
+Run the command:
+termux-change-repo
+
+The tool presents a menu to choose which repositories (e.g., main, x11, root) to update.
+Select mirrors like BFSU, Grimler, or Fosshost using arrow keys and the spacebar. 
+Confirm with Enter — it automatically updates the sources.list files. 
+After switching, run:
+pkg update && pkg upgrade
+
+to refresh and update packages. 
+
+Pkg Update && Pkg Upgrade
+----------------------------------------------------------------------------------------------------------------------
+
+pkg update && pkg upgrade is the standard command sequence to keep Termux up to date. 
+
+Run pkg update to refresh the package list from the repositories.
+Follow with pkg upgrade to install the latest versions of all installed packages.
+Use pkg update && pkg upgrade -y to automatically confirm prompts with -y, saving time. 
+
+Pkg install x11-repo root-repo tur-repo
+----------------------------------------------------------------------------------------------------------------------
+
+x11-repo: Installs the X11 package repository, enabling access to X11-related packages (like termux-x11-nightly, xwayland, and desktop environments such as XFCE4) for running graphical Linux applications on Android.  This is required to use Termux X11.
+
+root-repo: Enables access to packages that require root privileges on Android.  These packages are not available in the standard Termux repository due to Android's security model. 
+
+tur-repo: This is not a standard or official Termux repository.  It appears to be a typo or confusion with unstable-repo (for experimental packages) or its-pointless.github.io (a popular community repository). The tur-repo package does not exist in official Termux repositories and may cause errors. Use unstable-repo if you need unstable packages
+
+
 
 Requirements:
 

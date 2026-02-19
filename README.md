@@ -9,6 +9,23 @@ No Proot/ No Chroot/ No Ai/ No Scripts
 
 Straight Native Termux Desktop Mode
 
+Requirements:
+----------------------------------------------------------------------------------------------------------------------
+
+Android 8 or higher
+
+Termux installed from GitHub 
+
+(NOT F-droid Version)
+
+(NOT Google Play Version)
+
+Termux-X11 installed from Github
+
+At least 4 GB free storage
+
+6-8 GB RAM recommended for smooth desktop use
+
 ----------------------------------------------------------------------------------------------------------------------
 
 What Does Some of These Things Mean
@@ -101,23 +118,134 @@ root-repo: Enables access to packages that require root privileges on Android.  
 
 tur-repo: This is not a standard or official Termux repository.  It appears to be a typo or confusion with unstable-repo (for experimental packages) or its-pointless.github.io (a popular community repository). The tur-repo package does not exist in official Termux repositories and may cause errors. Use unstable-repo if you need unstable packages
 
+Pkg Install Git Wget Curl
+----------------------------------------------------------------------------------------------------------------------
 
+To install git, wget, and curl on Termux, run the following command in your Termux terminal:
 
-Requirements:
+pkg install git wget curl -y
 
-Android 8 or higher
+This command installs all three packages:
 
-Termux installed from GitHub 
+git: For version control and interacting with repositories (e.g., GitHub). 
 
-(NOT F-droid Version)
+wget: A command-line utility for downloading files from the web. 
 
-(NOT Google Play Version)
+curl: A tool to transfer data using various protocols (HTTP, HTTPS, FTP, etc.).
 
-Termux-X11 installed from Github
+pkg install xfce4 xfce4-goodies termux-x11-nightly
+----------------------------------------------------------------------------------------------------------------------
 
-At least 4 GB free storage
+To install XFCE4, XFCE4 goodies, and Termux-X11 Nightly on Termux, follow these steps:
 
-6-8 GB RAM recommended for smooth desktop use
+Enable the X11 repository:
+pkg install x11-repo
+
+Install XFCE4 desktop environment and additional packages:
+pkg install xfce4 xfce4-goodies
+
+Install Termux-X11 Nightly app:
+Download the APK from the official GitHub releases page: https://github.com/termux/termux-x11/releases
+Install it on your Android device (requires sideloading). 
+
+Start the XFCE4 session:
+Launch the Termux:X11 app on your Android device.
+
+In Termux, run:
+termux-x11 :1 -xstartup "dbus-launch --exit-with-session xfce4-session"
+
+This command starts the XFCE4 desktop environment via the X11 server. 
+Note: Ensure you have dbus installed (pkg install dbus) for session management.  If you encounter issues, delete the .ICEauthority file in your home directory 
+
+(rm -f ~/.ICEauthority) and retry. 
+
+pkg install florence code-oss firefox ark
+----------------------------------------------------------------------------------------------------------------------
+
+The commands pkg install florence code-oss firefox ark in Termux are used to install specific software packages from Termux's package repository:
+
+pkg install florence: Installs Florence, a virtual on-screen keyboard for Android, useful for touch-based input when using Termux with desktop environments or remote access.
+
+pkg install code-oss: Installs Code-OSS, the open-source version of Visual Studio Code, available via the Termux User Repository (TUR).  It includes telemetry but can be configured to disable it by default.
+
+pkg install firefox: Installs Firefox browser. This requires the x11-repo to be enabled for GUI support (e.g., via VNC or Termux:X11).
+
+pkg install ark: Installs Ark, a lightweight, fast, and feature-rich file manager for Linux, suitable for managing files in Termux. 
+
+termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"
+----------------------------------------------------------------------------------------------------------------------
+
+Termux-X11 works reliably when launching XFCE4 directly from Termux without using chroot or proot-distro.  The command:
+
+env DISPLAY=:0 dbus-launch --exit-with-session xfce4-session
+
+is the standard and recommended way to start the XFCE desktop environment in Termux when using Termux-X11. 
+
+Key Points:
+Ensure Termux-X11 is running: Start the Termux-X11 app with termux-x11 :0 & in the Termux terminal. 
+
+Set the correct DISPLAY: Use export DISPLAY=:0 before launching the session. 
+
+Use dbus-launch: This is required for proper session management in Termux-X11. However, some users report dbus-launch fails due to environment issues. 
+
+If dbus-launch fails:
+Replace the command with:
+
+env DISPLAY=:0 xfce4-session &> /dev/null 2>&1
+
+This bypasses dbus-launch entirely and often resolves connection issues, especially on newer Android versions or certain devices.
+
+WOW64 XOW64
+----------------------------------------------------------------------------------------------------------------------
+
+XoW64-Wine is a preconfigured setup for running 32-bit Windows applications on ARM64 Android devices using Termux, combining Wine-WoW64 and Box64 without requiring root access. 
+
+Key Features:
+Wine Version: 10.12 staging (latest stable). 
+Box64 Version: 0.3.7.
+
+Supported Environments: Termux with glibc or proot (no root required). 
+
+GPU Support: Full OpenGL/Vulkan via virgl, panfrost, turnip, or llvmpipe drivers. 
+
+Desktop Mode: Run Windows apps in a virtual desktop using xfce4 via termux-x11. 
+
+Installation:
+pkg install wget
+
+cd $HOME && rm -rf ~/xow64 && wget https://github.com/ar37-rs/xow64-wine/raw/refs/heads/main/xow64 && chmod +x ~/xow64
+
+~/xow64 install
+
+Basic Usage:
+Launch Wine in desktop mode: ~/xow64 s
+Run an .exe: ~/xow64 r app_name.exe
+Configure screen size: ~/xow64 desk-size 1024x768
+
+Quit Wine: ~/xow64 q 
+
+Graphics & Performance:
+Use virgl (virpipe) for best compatibility on Android 10+ with Vulkan 1.1+. 
+
+Enable dxvk-proton for better Direct3D performance: ~/xow64 vkd3d=true
+
+For Mali GPUs (G310+, G610, G710), use driver=panfrost with mmap32=false. 
+
+Dosbox
+----------------------------------------------------------------------------------------------------------------------
+
+DOSBox is available in Termux through the x11-repo package repository, which provides graphical Linux applications for Android.  To install DOSBox in Termux:
+
+Install Termux from F-Droid (not Google Play, as the Play Store version is outdated). 
+Update packages and add the x11-repo:
+
+pkg upgrade -y
+
+pkg install x11-repo -y
+
+Install DOSBox and a VNC server to view the graphical interface:
+
+pkg install dosbox -y
 
 ----------------------------------------------------------------------------------------------------------------------
 

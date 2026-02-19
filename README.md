@@ -336,7 +336,7 @@ Reccomended Choose Mirror Group so You Don't Have no Issues With The Repo's
 
 Single Mirror Gives you The Choice Of Differnt Repo's
 
-4: pkg upgrade
+4: pkg upgrade -y
 
 ----------------------------------------------------------------------------------------------------------------------
 

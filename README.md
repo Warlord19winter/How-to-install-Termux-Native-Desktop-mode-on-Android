@@ -135,11 +135,14 @@ Use pkg update && pkg upgrade -y to automatically confirm prompts with -y, savin
 pkg install x11-repo root-repo tur-repo
 ----------------------------------------------------------------------------------------------------------------------
 
-x11-repo: Installs the X11 package repository, enabling access to X11-related packages (like termux-x11-nightly, xwayland, and desktop environments such as XFCE4) for running graphical Linux applications on Android.  This is required to use Termux X11.
+x11-repo:
+https://github.com/termux/x11-packages
 
-root-repo: Enables access to packages that require root privileges on Android.  These packages are not available in the standard Termux repository due to Android's security model. 
+root-repo:
+https://github.com/termux/termux-root-packages
 
-tur-repo: This is not a standard or official Termux repository.  It appears to be a typo or confusion with unstable-repo (for experimental packages) or its-pointless.github.io (a popular community repository). The tur-repo package does not exist in official Termux repositories and may cause errors. Use unstable-repo if you need unstable packages
+tur-repo:
+https://github.com/termux-user-repository/tur
 
 pkg Install Git Wget Curl
 ----------------------------------------------------------------------------------------------------------------------

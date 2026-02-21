@@ -65,34 +65,7 @@ Phantom Process Killer Issue
 
 Phantom Process Killer in Android 12+ is a system feature that terminates background processes, particularly those spawning more than 32 child processes (a combined limit across all apps), often causing Termux to crash with the error [Process completed (signal 9) - press Enter]. 
 
-This issue affects Termux, Andronix, and similar apps that run Linux environments or background services. The killer is triggered by excessive CPU usage or process count, leading to unexpected app termination. 
-
-How to Fix It
-For Non-Rooted Devices (Using ADB)
-Enable Developer Options by tapping Build Number 7 times in Settings > About Phone. 
-Enable USB Debugging and Wireless Debugging. 
-Use a PC or Termux with android-tools to run:
-adb shell "settings put global settings_enable_monitor_phantom_procs false"
-
-For older Android versions (12), use:
-adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"
-adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"
-
-Reboot your device.
-For Rooted Devices
-Use Termux with root access (su) and run:
-
-su -c "settings put global settings_enable_monitor_phantom_procs false"
-
-Or for Android 12:
-
-su -c "/system/bin/device_config set_sync_disabled_for_tests persistent"
-su -c "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"
-
-Reboot after.
-
-For Android 14+
-Go to Settings > Developer Options > Disable child process restrictions (if available). 
+This issue affects Termux, Andronix, and similar apps that run Linux environments or background services. The killer is triggered by excessive CPU usage or process count, leading to unexpected app termination.
 
 What is The Commands Mean
 
@@ -187,9 +160,7 @@ In Termux, run:
 termux-x11 :1 -xstartup "dbus-launch --exit-with-session xfce4-session"
 
 This command starts the XFCE4 desktop environment via the X11 server. 
-Note: Ensure you have dbus installed (pkg install dbus) for session management.  If you encounter issues, delete the .ICEauthority file in your home directory 
-
-(rm -f ~/.ICEauthority) and retry. 
+Note: Ensure you have dbus installed (pkg install dbus) for session management.  If you encounter issues, delete the .ICEauthority file in your home directory
 
 pkg install florence code-oss firefox ark
 ----------------------------------------------------------------------------------------------------------------------
@@ -285,11 +256,7 @@ Step 1. Setting up Android
 
 To get Developer Settings to Show go to The Android Build Number Located in "Android Settings/About Phone/Software Information
 
-![ResizedImage_2026-02-17_15-15-18_1388](https://github.com/user-attachments/assets/c37b3062-d0ca-49e8-95a5-47db1733c12a)
 
-![1001050516](https://github.com/user-attachments/assets/db32f979-a717-4adb-8208-435dfbb1c398)
-
-![ResizedImage_2026-02-17_15-13-59_1111](https://github.com/user-attachments/assets/616a22e0-de5d-4ba1-8c9a-04e777fbca6f)
 
 Click the Build Number 3 or More Times to Enable Developer settings
 

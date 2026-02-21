@@ -1,5 +1,10 @@
 # How-to-install-Termux-Native-Desktop-mode-on-Android
 
+if you want a barebone version of this guide please click this link
+
+
+
+
 In This Guide on Termux It Will Cover Only Github Version of Termux
 ----------------------------------------------------------------------------------------------------------------------
 

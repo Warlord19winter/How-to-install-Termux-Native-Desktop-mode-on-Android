@@ -2,6 +2,7 @@
 
 if you want a barebone version of this guide please click this link
 
+https://github.com/Warlord19winter/A-boiled-down-version-of-main-guide
 
 
 

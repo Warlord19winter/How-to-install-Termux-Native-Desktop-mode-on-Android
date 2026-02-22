@@ -313,9 +313,9 @@ or press enter twice
 
 Termux Will Ask You to Choose From Mirror Group, or Single Mirror
 
-Reccomended Choose Mirror Group so You Don't Have no Issues With The Repo's
+Reccomended Choose Mirror Group so You Don't Have no Issues With The Repo
 
-Single Mirror Gives you The Choice Of Differnt Repo's
+Single Mirror Gives you The Choice Of Differnt Repo
 
 4: pkg upgrade -y
 

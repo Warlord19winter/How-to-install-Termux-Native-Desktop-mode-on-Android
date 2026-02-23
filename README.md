@@ -383,6 +383,12 @@ This Command Installs Dosbox
 
 pkg install dosbox
 
+the config file is in  ~/home/.dosbox
+
+run this command to edit the dosbox config
+
+nano ~/.dosbox/dosbox-0.74-3.conf
+
 In the Config for Dosbox Paste This into the Text File at the Bottom
 
 mount c /data/data/com.termux/files/home/Downloads

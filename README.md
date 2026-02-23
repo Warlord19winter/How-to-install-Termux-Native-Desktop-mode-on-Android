@@ -392,6 +392,7 @@ nano ~/.dosbox/dosbox-0.74-3.conf
 In the Config for Dosbox Paste This into the Text File at the Bottom
 
 mount c /data/data/com.termux/files/home/Downloads
+
 C:
 
 Now Dosbox is Install

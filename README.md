@@ -15,8 +15,12 @@ No Proot/ No Chroot/ No Ai/ No Scripts
 
 Straight Native Termux Desktop Mode
 
-Phone and Handhelds I used with this guide
+Phone, Handhelds, and Vr headsets I used with this guide
 ----------------------------------------------------------------------------------------------------------------------
+
+Vr Headsets
+
+1: Meta Quest 3s
 
 Phones
 
@@ -347,13 +351,15 @@ These are Needed Programs to install
 
 10: pkg install termux-exec clang inxi
 
+11: pkg install mesa-zink 
+
 ----------------------------------------------------------------------------------------------------------------------
 
 These Commands is to Install Audio
 
-11: pkg install pulseaudio
+12: pkg install pulseaudio
 
-12: pulseaudio --start
+13: pulseaudio --start
 
 ----------------------------------------------------------------------------------------------------------------------
 

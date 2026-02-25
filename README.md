@@ -351,7 +351,6 @@ These are Needed Programs to install
 
 10: pkg install termux-exec clang inxi
 
-11: pkg install mesa-zink mesa-demos virglrenderer-android
 11: pkg install mesa-zink mesa-demos virglrenderer-android htop
 
 ----------------------------------------------------------------------------------------------------------------------

@@ -4,8 +4,7 @@ if you want a barebone version of this guide please click this link
 
 https://github.com/Warlord19winter/A-boiled-down-version-of-main-guide
 
-you can use termux-x11 gui app at https://github.com/termux/termux-x11
-
+you can use termux-x11 gui app at https://github.com/termux/termux-x11/releases/tag/nightly
 or this modded version from xodios at https://github.com/xodiosx/XoDos/releases/tag/v6.0.0
 
 In This Guide on Termux It Will Cover Only Github Version of Termux

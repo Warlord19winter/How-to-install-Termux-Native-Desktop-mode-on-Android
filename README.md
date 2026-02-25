@@ -12,7 +12,7 @@ In This Guide on Termux It Will Cover Only Github Version of Termux
 
 The Best Way to use Termux
 
-No Proot/ No Chroot/ No Ai/ No Scripts
+No Proot/ No Chroot/ No Ai
 
 Straight Native Termux Desktop Mode
 
